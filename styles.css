@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Noto Sans Mono;
+}
+a {
+  text-decoration: none;
+  transition: .2s;
+  
+}
+ul {
+  list-style-type: none;
+  padding:0;
+  margin: 0;
+}
+*header {
+  height: 100vh;
+  width: 100%;
+ background-image: url("https://avatars.githubusercontent.com/u/94741774?v=4");
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;padding-left: 6%;
+  padding-right: 4%;
+
+}
+.logo{
+  color: #2192FF;
+  font-size: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+span{
+  color: #D58BDD;
+}
+nav ul li {
+  display: inline-block;
+  padding: 10px 24px;
+}
+nav ul li a:hover {
+color: #00FFD1;
+}
+.btn {
+  background-color: #00FFD1;
+  color: black;
+  border: 2px solid transparent;
+  padding: 10px 25px;
+  border-radius: 14px;
+  transition: .4s;
+  box-shadow:0 0 5px #999, 0 0 14px #FFD6EC;
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+.content{
+  
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+.content .title{
+  color: #1f1f25;
+  font-size: 25px;
+  text-transform: camelCase;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-bottom: 2px;
+  background: linear-gradient(120deg, #333C83 20.69%, #F24A72 50.19%,#006778 79.69%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 
+.about {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #DFF6FF;
+}
+.about img{
+height: auto;
+width: 400px;
+border-radius: 100%;
+}
+.about-me {
+  width: 600px;
+}
+.main {
+  width: 1130px;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-me h2 {
+  margin-bottom: 16px;
+  font-size: 30px;
+}
+.about-me h5 {
+  font-size: 22px;
+  letter-spacing: normal;
+  text-transform: capitalize;
+}
+
+.skills{
+  display: flex;
+  overflow: hidden;
+  padding-left: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  gap: 24px;
+  background-color: #EDEDED;
+}
+.skills img {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  border-radius: 70%;
+  border: 2px solid #47B5FF;
+  /* margin-right: 0100px; */
+  /* margin-left: 5rem; */
+}
+
+
+.projects {
+  background: #FFA1CF;
+  width: 100%;
+  padding: 80px 0px;
+}
+.proje-title h2 {
+  font-size: 25px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.card-box {
+  height: 350px;
+  width: 345px;
+  padding: 20px 34px;
+  background: #256D85;
+  border-radius: 18px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.card-box i {
+  font-size: 29px;
+  display: block;
+  text-align: center;
+  margin: 25px 0;
+  color: #FFD6EC;
+}
+h5 {
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+.kbar p {
+  color: #00FFD1;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 22px;
+}
+.card-box .button {
+  border: 1px solid transparent;
+  border-radius: 14px;
+  background-color: #F24A72;
+  padding: 9px 20px;
+  transition: .2s;
+}
+.card-box .button:hover {
+  background-color: #00FFD1;
+  color: black;
+  border: 2px solid transparent;
+  padding: 8px 22px;
+  border-radius: 14px;
+  transition: .4s;
+  box-shadow:0 0 5px #999, 0 0 14px #FFD6EC;
+}
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}

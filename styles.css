@@ -14,19 +14,22 @@ ul {
   padding:0;
   margin: 0;
 }
-*header {
+.header {
   height: 100vh;
   width: 100%;
- background-image: url("https://avatars.githubusercontent.com/u/94741774?v=4");
+ background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg");
   background-size: cover;
   background-position: center;
 }
 nav {
+
   display: flex;
   align-items: center;
+ color: ;
   justify-content: space-between;
   padding-top: 20px;padding-left: 6%;
   padding-right: 4%;
+  
 
 }
 .logo{
@@ -36,7 +39,7 @@ nav {
   cursor: pointer;
 }
 span{
-  color: #D58BDD;
+  color: #c5c5c5;
 }
 nav ul li {
   display: inline-block;
@@ -47,7 +50,7 @@ color: #00FFD1;
 }
 .btn {
   background-color: #00FFD1;
-  color: black;
+  color: rgb(8, 0, 0);
   border: 2px solid transparent;
   padding: 10px 25px;
   border-radius: 14px;
@@ -70,7 +73,7 @@ color: #00FFD1;
   letter-spacing: 1px;
   display: inline-block;
   margin-bottom: 2px;
-  background: linear-gradient(120deg, #333C83 20.69%, #F24A72 50.19%,#006778 79.69%);
+  background: linear-gradient(120deg, #1a2fcc 20.69%, #8b7a7e 50.19%,#989fa0 79.69%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } 
@@ -112,12 +115,13 @@ border-radius: 100%;
 }
 .my-skills h2 {
   font-size: 25px;
-  width: 1130px;
+  width: 100%;
   margin: 10px auto;
   text-align: center;
 }
 
 .skills-box{
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,7 +150,7 @@ background: #EDEDED;
 }
 .proje-title h2 {
   font-size: 25px;
-  width: 1130px;
+  width: 100%;
   margin: 30px auto;
   text-align: center;
 
@@ -205,6 +209,7 @@ h5 {
 
 .grid-container {
   display: grid;
+  
   align-items: center;
   justify-content: center;
   grid-template-columns: auto auto auto auto;
@@ -218,6 +223,7 @@ h5 {
   border: 1px solid black;
   text-align: center;
   font-size: 30px;
+
 }
 .grid-image img {
   height: 100px;

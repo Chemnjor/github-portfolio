@@ -81,36 +81,7 @@ color: #00FFD1;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } 
-.about {
-  width: 100%;
-  padding: 100px 0px;
-  background-color: #DFF6FF;
-}
-.about img{
-height: auto;
-width: 400px;
-border-radius: 100%;
-}
-.about-me {
-  width: 600px;
-}
-.main {
-  width: 1130px;
-  max-width: 90%;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.about-me h2 {
-  margin-bottom: 16px;
-  font-size: 30px;
-}
-.about-me h5 {
-  font-size: 22px;
-  letter-spacing: normal;
-  text-transform: capitalize;
-}
+
 
 .skills {
   background: #C8DBBE;
@@ -225,11 +196,7 @@ h5 {
 }
 
 .card-2 {
-  /* --card-gradient: rgba(0, 0, 0, 0.8);
-  --card-gradient: #5e9ad9, #e271ad;
-   --card-blend-mode: overlay; */
   
-  /* background-color: rgb(122, 19, 19); */
   border-radius: 0.5rem;
   box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
   padding-bottom: 22px;
@@ -310,6 +277,7 @@ h5 {
 .media a:hover {
   transform: scale(1.2);
   transition: .2s;
+  cursor: pointer;
 }
 .last{
   position: absolute;
@@ -330,4 +298,67 @@ footer {
 footer p{
 color: blue;
 font-size: 22px;
+}
+
+.box-contain {
+ height: 100vh; 
+  background: linear-gradient(120deg, #5360d4,  #4f5c68);
+display: flex;
+align-items: center;
+justify-content: center;
+ 
+}
+.box-contain .boxing  {
+  width: 900px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 5px 10px #42275a;
+  display: flex;
+  align-items: center;
+  margin: 18px;
+}
+.box-contain .boxing .image{
+  text-align: center;
+  padding: 60px 0;
+  width: 240px;
+}
+.box-contain .boxing .image img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 8px #412e23
+}
+.box-contain .boxing .conten {
+  margin-left: 20px;
+  
+}
+.conten h2{
+  margin-left: 50px;
+  font-size: 26px;
+}
+.conten h5{
+  margin-left: 50px;
+}
+
+@media (max-width: 650px) {
+  .box-contain .boxing {
+    flex-flow: column;
+    width: 320px;
+   }
+   .box-contain .boxing .image {
+    height: 200px;
+    width: 100%;
+    padding: 20px 0px;
+   }
+   .box-contain .boxing img {
+    height: 140px;
+    width: 140px;
+  } .conten {
+    padding: 26px 5px;
+  }
+  .media{
+   flex-flow: row;
+   width: 100%;  padding: 5px 0;
+  }
 }

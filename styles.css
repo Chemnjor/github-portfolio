@@ -126,23 +126,28 @@ border-radius: 100%;
 
 .skills-box{
   
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 22px;
+   justify-content: center;
   align-items: center;
+  margin-left: 50px;
 }
 .skills-box img{
   display: inline-block;height: 100px;
+  align-items: center;
+  justify-content: center;
   width: 100px;
   border-radius: 10px;
   border: 2px solid #00FFD1;  margin-right: 0;
-  align-items: center;
-  object-fit: cover;
+   object-fit: cover;
+   
   
  
 }
 .skill-bo {
-
- padding: 20px 24px;
+width: 150px;
+ padding: 20px 20px;
 background: #EDEDED;
   border-radius: 18px;
   margin: 14px;
@@ -247,8 +252,7 @@ h5 {
   justify-items: center;
   min-height: 100vh;
   margin: 0;
- ;
-  line-height: 1.5;
+   line-height: 1.5;
   background: #FFA1CF;
   width: 100%;
   padding: 80px 0px;
